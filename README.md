@@ -36,3 +36,14 @@ npm i --save-dev @types/react-native-dotenv
 ```sh
 npm i react-router-dom
 ```
+
+## Add Eslint
+
+https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
+
+```sh
+npm install eslint --save-dev
+npx eslint --init
+npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
+
+```

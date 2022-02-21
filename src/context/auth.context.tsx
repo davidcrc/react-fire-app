@@ -26,7 +26,5 @@ export const useAuth = () => {
 export const AuthProvider: FC<Props> = ({ children, ...props }) => {
   const user = { login: true };
 
-  return (
-    <authContext.Provider value={{ user }}>{children}</authContext.Provider>
-  );
+  return <authContext.Provider value={{ user }}>{children}</authContext.Provider>;
 };
