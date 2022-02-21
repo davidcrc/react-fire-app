@@ -30,3 +30,9 @@ npm i firebase
 npm install react-native-dotenv
 npm i --save-dev @types/react-native-dotenv
 ```
+
+## add react router dom
+
+```sh
+npm i react-router-dom
+```
