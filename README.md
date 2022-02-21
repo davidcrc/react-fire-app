@@ -24,13 +24,6 @@ npx tailwindcss init
 npm i firebase
 ```
 
-## Add dot-env
-
-```sh
-npm install react-native-dotenv
-npm i --save-dev @types/react-native-dotenv
-```
-
 ## add react router dom
 
 ```sh

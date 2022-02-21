@@ -1,8 +1,6 @@
 import React from "react";
 
-interface LoginProps {}
-
-const Login: React.FunctionComponent<LoginProps> = (props) => {
+const Login: React.FunctionComponent = () => {
   return <div>Login</div>;
 };
 

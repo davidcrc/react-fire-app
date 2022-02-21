@@ -1,14 +1,10 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { createContext, FC, useContext } from "react";
-interface Props {
-  // any props that come into the component
-}
-
-interface User {
-  login: boolean;
-}
+import { auth } from "../firebase-config";
 
 interface AppContextInterface {
-  user: User;
+  // user: User;
+  signUp: any;
 }
 
 export const authContext = createContext<AppContextInterface | null>(null);
@@ -23,8 +19,9 @@ export const useAuth = () => {
   return context;
 };
 
-export const AuthProvider: FC<Props> = ({ children, ...props }) => {
-  const user = { login: true };
+export const AuthProvider: FC = ({ children }) => {
+  // const user = { login: true };
+  const signUp = (email: string, password: string) => createUserWithEmailAndPassword(auth, email, password);
 
-  return <authContext.Provider value={{ user }}>{children}</authContext.Provider>;
+  return <authContext.Provider value={{ signUp }}>{children}</authContext.Provider>;
 };
